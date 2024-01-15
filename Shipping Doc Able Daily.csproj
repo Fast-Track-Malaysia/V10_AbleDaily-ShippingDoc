@@ -146,6 +146,12 @@
     <Compile Include="SAP.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="APSA.srf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BATCHNO.srf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="runtime.ico" />
   </ItemGroup>
   <ItemGroup>
