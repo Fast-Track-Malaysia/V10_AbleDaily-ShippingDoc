@@ -132,7 +132,10 @@ namespace FT_ADDON
                 SboGuiApi = new SAPbouiCOM.SboGuiApi();
 
                 // Connect to running SBO Application
-                sConnectionString = System.Convert.ToString(Environment.GetCommandLineArgs().GetValue(1));
+                if (Environment.GetCommandLineArgs().Length > 1)
+                    sConnectionString = System.Convert.ToString(Environment.GetCommandLineArgs().GetValue(1));
+                else
+                    sConnectionString = "0030002C0030002C00530041005000420044005F00440061007400650076002C0050004C006F006D0056004900490056";
 
                 // Fast Track SBOi AddOn License Key
                 //SboGuiApi.AddonIdentifier = "56455230354241534953303030363030303439303A4C30353436383833333837BE2D8E3EA0DBD35826EF326077F8A12A43680561";

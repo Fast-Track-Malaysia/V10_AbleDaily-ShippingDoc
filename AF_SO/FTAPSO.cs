@@ -303,7 +303,7 @@ namespace FT_ADDON.AP_SO
 
             if (!app.udfExist("CUFD", "seq"))
                 if (!app.createField("CUFD", "seq", "Seq No", SAPbobsCOM.BoFieldTypes.db_Numeric, 0, "0")) goto ErrorHandler;
-            
+
             if (!app.createUDO("FT_SHIPD", "Shipping Document", SAPbobsCOM.BoUDOObjType.boud_Document, "FT_SHIPD", "FT_SHIP1|FT_SHIP2|FT_SHIP3", "", SAPbobsCOM.BoYesNoEnum.tNO, SAPbobsCOM.BoYesNoEnum.tNO, SAPbobsCOM.BoYesNoEnum.tNO, SAPbobsCOM.BoYesNoEnum.tYES, SAPbobsCOM.BoYesNoEnum.tNO, "")) goto ErrorHandler; ;
 
             //if (!app.udfExist("@FT_APSOC", "CONDATE"))
